@@ -359,8 +359,8 @@ module.exports = class bitbns extends Exchange {
             const tradeObj = {
                 'info': trades[i],
                 'id': trades[i]['id'],
-                'timestamp': trades[i]['date'],
-                'datetime': this.parse8601 (trades[i]['date']),
+                'timestamp': this.parse8601 (trades[i]['date']),
+                'datetime': trades[i]['date'],
                 'symbol': symbol,
                 'order': undefined,
                 'type': 'limit',
